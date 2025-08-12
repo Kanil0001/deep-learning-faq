@@ -22,9 +22,9 @@
   <div class="faq-item">
     <div class="question">How do I install Python and TensorFlow?</div>
     <div class="answer">
-      You can download Python from <a href="https://www.python.org/downloads/" target="_blank">python.org</a>.  
+      You can download Python from <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">python.org</a>.  
       For TensorFlow, run <code>pip install tensorflow</code> in your terminal.  
-      See our <a href="https://www.tensorflow.org/install" target="_blank">TensorFlow installation guide</a> for more details.
+      See our <a href="https://www.tensorflow.org/install" target="_blank" rel="noopener noreferrer">TensorFlow installation guide</a> for more details.
     </div>
   </div>
 
@@ -55,8 +55,84 @@
   <div class="faq-item">
     <div class="question">Where can I share my project or ask questions?</div>
     <div class="answer">
-      Join our Reddit community at <a href="https://www.reddit.com/r/YourCommunityName/" target="_blank">r/YourCommunityName</a>!  
+      Join our Reddit community at <a href="https://www.reddit.com/r/YourCommunityName/" target="_blank" rel="noopener noreferrer">r/YourCommunityName</a>!  
       Share your code, results, or post questions there for help.
+    </div>
+  </div>
+
+  <!-- New questions -->
+
+  <h2>Additional Essential Questions</h2>
+
+  <div class="faq-item">
+    <div class="question">What is a GPU and why should I use one?</div>
+    <div class="answer">
+      A GPU speeds up training by processing many calculations in parallel, making deep learning much faster compared to CPUs.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">What are epochs, batches, and learning rates?</div>
+    <div class="answer">
+      <strong>Epoch:</strong> One full pass through the training data.<br/>
+      <strong>Batch:</strong> A subset of data processed before updating model weights.<br/>
+      <strong>Learning rate:</strong> Controls how big each weight update step is during training.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">How do I save and load a trained model?</div>
+    <div class="answer">
+      In TensorFlow, use <code>model.save('model.h5')</code> to save and <code>tf.keras.models.load_model('model.h5')</code> to load your model.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">What is overfitting and how can I prevent it?</div>
+    <div class="answer">
+      Overfitting means the model performs well on training data but poorly on new data. Prevent it using techniques like dropout, early stopping, and more data.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">How do I choose the number of layers and neurons?</div>
+    <div class="answer">
+      Start with a small network (1-2 hidden layers) and experiment to find the right size for your task.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">What is an activation function? Why use ReLU or softmax?</div>
+    <div class="answer">
+      Activation functions add non-linearity. ReLU is common in hidden layers for efficiency; softmax is used in output layers to get class probabilities.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">Can I train a model on my laptop?</div>
+    <div class="answer">
+      Yes! For small projects like MNIST, laptops are fine though training may be slower than on GPUs.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">What is transfer learning?</div>
+    <div class="answer">
+      Transfer learning uses a model trained on one task to help with a related task, saving time and improving results.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">How do I handle imbalanced datasets?</div>
+    <div class="answer">
+      Use techniques like oversampling, undersampling, or weighted loss functions to manage class imbalance.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">Where can I learn more about deep learning?</div>
+    <div class="answer">
+      Recommended resources: <em>Deep Learning</em> by Ian Goodfellow, Coursera’s Deep Learning Specialization by Andrew Ng, and official TensorFlow/PyTorch tutorials.
     </div>
   </div>
 
