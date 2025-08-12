@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deep Learning Project FAQ</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; background: #f9f9f9; color: #333; }
+    h1, h2 { color: #004080; }
+    .faq-item { margin-bottom: 1.5rem; }
+    .question { font-weight: bold; cursor: pointer; }
+    .answer { margin-top: 0.5rem; display: none; }
+    .faq-item.open .answer { display: block; }
+    .faq-item:hover { background: #e6f0ff; padding: 0.5rem; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>Deep Learning Project FAQ</h1>
+  <p>Welcome to the FAQ for our deep learning community! Here you’ll find answers to common questions about setup, coding, and projects.</p>
+
+  <div class="faq-item">
+    <div class="question">How do I install Python and TensorFlow?</div>
+    <div class="answer">
+      You can download Python from <a href="https://www.python.org/downloads/" target="_blank">python.org</a>.  
+      For TensorFlow, run <code>pip install tensorflow</code> in your terminal.  
+      See our <a href="https://www.tensorflow.org/install" target="_blank">TensorFlow installation guide</a> for more details.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">What is the MNIST dataset?</div>
+    <div class="answer">
+      MNIST is a dataset of 70,000 handwritten digit images used to train image classification models.  
+      It’s a great starting point for beginners in deep learning.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">How do I normalize images?</div>
+    <div class="answer">
+      Normalizing means scaling pixel values from 0–255 down to 0–1 by dividing by 255.  
+      This helps neural networks learn faster and more accurately.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">My model accuracy is low. What can I do?</div>
+    <div class="answer">
+      Try increasing epochs, adding more layers, or adjusting learning rates.  
+      Also ensure your data is normalized correctly.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">Where can I share my project or ask questions?</div>
+    <div class="answer">
+      Join our Reddit community at <a href="https://www.reddit.com/r/YourCommunityName/" target="_blank">r/YourCommunityName</a>!  
+      Share your code, results, or post questions there for help.
+    </div>
+  </div>
+
+  <script>
+    const faqs = document.querySelectorAll('.faq-item');
+    faqs.forEach(faq => {
+      faq.querySelector('.question').addEventListener('click', () => {
+        faq.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
